@@ -3,16 +3,24 @@
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
+import apikey
 
-url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+# from api doc
+# url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+# parameters = {
+#   'start':'1',
+#   'limit':'5000',
+#   'convert':'USD'
+# }
+
+url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 parameters = {
-  'start':'1',
-  'limit':'5000',
-  'convert':'USD'
+  'id':'2',
+  
 }
 headers = {
   'Accepts': 'application/json',
-  'X-CMC_PRO_API_KEY': 'b17cbed5-42a2-449a-8610-ccaa79a4677c',
+  'X-CMC_PRO_API_KEY': apikey.key,
 }
 
 session = Session()
