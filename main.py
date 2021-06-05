@@ -17,6 +17,7 @@ url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 parameters = {
   'id':'2',
   
+  
 }
 headers = {
   'Accepts': 'application/json',
