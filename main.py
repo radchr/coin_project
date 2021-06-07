@@ -12,13 +12,10 @@ import apikey
 #   'limit':'5000',
 #   'convert':'USD'
 # }
-
 url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 parameters = {
   'id':'2',
-  
-  
-}
+  }
 headers = {
   'Accepts': 'application/json',
   'X-CMC_PRO_API_KEY': apikey.key,
